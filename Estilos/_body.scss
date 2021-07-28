@@ -1,0 +1,121 @@
+$altura : "680px";
+#menu{
+    text-decoration: none;
+    padding: 0,5rem 3rem 0.5rem 3rem;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover { background-color: rgb(16, 138, 87);
+        color: blanchedalmond;
+        padding: 0.8rem 5rem 0.8rem 5rem;
+        color: black;
+        transition: all 0.5s;}
+    }
+    #divPrincipal {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 20px;
+        background-color: rgb(133, 133, 133);
+    }
+    #grillaExe {
+        display: grid;
+        grid-template-areas:
+        "exp   exp   vid vid"
+        "tabla tabla vid vid";
+        background-color:rgb(133, 133, 133);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 20px;
+        grid-template-columns:25%;
+        grid-template-rows:150px 370px ;
+    }
+    #exp {
+        grid-area: exp;
+    }
+    #tabla {
+        grid-area: tabla;
+    }
+    video {
+        grid-area: vid;
+    }
+    #flexIndex {
+        display: flex;
+        justify-content: center;
+    }
+    #grillaExe--fun {
+        @extend #grillaExe; 
+        padding-bottom:35px;
+    }
+    .container {
+        height: $altura;
+    }
+    .fuenteNunito {
+        font-family: 'Nunito', sans-serif;
+    }
+    .estiloUl {
+        list-style-type: circle;
+    }
+    .estiloOl {
+        list-style-type: upper-roman;
+    }  
+    .bordeCircular {
+        border-radius: 100%;}
+    .colorTabla {
+            background-color: black; color: blanchedalmond;}
+    .negrita {
+        font-weight: bold;
+    }
+            
+    .colorTitulos {
+        color: rgb(0, 80, 47);
+    }
+    .colorMenu {
+        color: rgb(16, 138, 87);
+    }
+    .tamañoFuente {
+        font-size: 120%;
+    }
+    .tamañoH1{
+        font-size: 2rem;
+    }
+    .tamañoH2{
+        font-size: 1.5rem;
+    }
+    .bordesRedondeados {
+        border-radius: 5%;
+    }
+    .centrarTexto {
+        text-align: center;
+    }
+    .sinSubrayado {
+        text-decoration: none;
+    }
+    .colorFuente {
+        color: blanchedalmond;
+    }
+    .margenes { margin-top:10px;
+        margin-bottom: 10px;   
+    }
+    .colorM{
+        background-color: rgb(133, 133, 133);
+    }
+    .padding { 
+        padding: 20px;
+    }
+    .interlineado {
+        line-height: 40px;
+    }
+    .tamañoSection {
+        height:80vh ;
+    }
+    .tamañoFooter {
+        height: 5vh;
+    }
+    .opacity {
+        opacity:0% ;
+    }
+    .paddingTabla {
+        padding: 10px;
+    }

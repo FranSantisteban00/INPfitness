@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+    background-image: linear-gradient( rgb(16, 138, 87), rgb(0, 37, 51) );
+    color: blanchedalmond;
+    font-family: 'Nunito', sans serif;
+}
+$colores: (
+    insta: rgb(189, 18, 174),
+    tiktok: black,
+    face:rgb(18, 44, 189),
+)
+;
+@each $name-color, $bgcolor in $colores {
+    .btn--#{$name-color}{
+        color: $bgcolor;}
+}
+.flexFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.btn_social {
+    padding-right: 15px;
+}
+ 

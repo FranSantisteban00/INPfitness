@@ -1,0 +1,25 @@
+header {
+    color: blanchedalmond;
+    font-family:'Nunito', sans-serif;
+    font-size: 110%; 
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    height: auto;
+        p{
+            margin: 0;
+        }
+        ul{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            list-style-type: none;
+            overflow:auto;
+            font-family:'Nunito', sans-serif;
+            text-align:start
+        }
+        li a:hover {
+            padding: 5px;
+            background-color: rgb(16, 138, 87);
+            color: blanchedalmond;
+        }
+    }

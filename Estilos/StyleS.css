@@ -1,0 +1,284 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #a3a3a3;
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  margin: 20px;
+}
+
+header {
+  color: blanchedalmond;
+  font-family: 'Nunito', sans-serif;
+  font-size: 110%;
+  background-color: black;
+  padding: 10px;
+  height: auto;
+}
+
+header p {
+  margin: 0;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  overflow: auto;
+  font-family: 'Nunito', sans-serif;
+  text-align: start;
+}
+
+header li a:hover {
+  padding: 5px;
+  background-color: #108a57;
+  color: blanchedalmond;
+}
+
+#menu {
+  text-decoration: none;
+  padding: 0,5rem 3rem 0.5rem 3rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#menu:hover {
+  background-color: #108a57;
+  color: blanchedalmond;
+  padding: 0.8rem 5rem 0.8rem 5rem;
+  color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#divPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #858585;
+}
+
+#grillaExe, #grillaExe--fun {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "exp   exp   vid vid" "tabla tabla vid vid";
+  background-color: #858585;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  -ms-grid-columns: 25%;
+      grid-template-columns: 25%;
+  -ms-grid-rows: 150px 370px;
+      grid-template-rows: 150px 370px;
+}
+
+#exp {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: exp;
+}
+
+#tabla {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tabla;
+}
+
+video {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: vid;
+}
+
+#flexIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#grillaExe--fun {
+  padding-bottom: 35px;
+}
+
+.container {
+  height: "680px";
+}
+
+.fuenteNunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.estiloUl {
+  list-style-type: circle;
+}
+
+.estiloOl {
+  list-style-type: upper-roman;
+}
+
+.bordeCircular {
+  border-radius: 100%;
+}
+
+.colorTabla {
+  background-color: black;
+  color: blanchedalmond;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.colorTitulos {
+  color: #00502f;
+}
+
+.colorMenu {
+  color: #108a57;
+}
+
+.tamañoFuente {
+  font-size: 120%;
+}
+
+.tamañoH1 {
+  font-size: 2rem;
+}
+
+.tamañoH2 {
+  font-size: 1.5rem;
+}
+
+.bordesRedondeados {
+  border-radius: 5%;
+}
+
+.centrarTexto {
+  text-align: center;
+}
+
+.sinSubrayado {
+  text-decoration: none;
+}
+
+.colorFuente {
+  color: blanchedalmond;
+}
+
+.margenes {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.colorM {
+  background-color: #858585;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.interlineado {
+  line-height: 40px;
+}
+
+.tamañoSection {
+  height: 80vh;
+}
+
+.tamañoFooter {
+  height: 5vh;
+}
+
+.opacity {
+  opacity: 0%;
+}
+
+.paddingTabla {
+  padding: 10px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#108a57), to(#002533));
+  background-image: linear-gradient(#108a57, #002533);
+  color: blanchedalmond;
+  font-family: 'Nunito', sans serif;
+}
+
+.btn--insta {
+  color: #bd12ae;
+}
+
+.btn--tiktok {
+  color: black;
+}
+
+.btn--face {
+  color: #122cbd;
+}
+
+.flexFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.btn_social {
+  padding-right: 15px;
+}
+/*# sourceMappingURL=StyleS.css.map */
