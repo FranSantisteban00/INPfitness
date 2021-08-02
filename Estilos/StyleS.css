@@ -5,8 +5,11 @@
 }
 
 body {
-  background-color: #a3a3a3;
   font-family: 'Nunito', sans-serif;
+  background-image: url("./fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: auto;
 }
 
 a {
@@ -14,7 +17,7 @@ a {
 }
 
 li {
-  margin: 20px;
+  margin: 1.3rem;
 }
 
 header {
@@ -22,34 +25,25 @@ header {
   font-family: 'Nunito', sans-serif;
   font-size: 110%;
   background-color: black;
-  padding: 10px;
   height: auto;
+  width: 100vw;
 }
 
 header p {
   margin: 0;
 }
 
-header ul {
+.navPadding {
+  padding-left: 0.5rem;
+}
+
+.flexHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  list-style-type: none;
-  overflow: auto;
-  font-family: 'Nunito', sans-serif;
-  text-align: start;
-}
-
-header li a:hover {
-  padding: 5px;
-  background-color: #108a57;
-  color: blanchedalmond;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #menu {
@@ -64,8 +58,8 @@ header li a:hover {
   color: blanchedalmond;
   padding: 0.8rem 5rem 0.8rem 5rem;
   color: black;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #divPrincipal {
@@ -79,46 +73,9 @@ header li a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 20px;
-  background-color: #858585;
-}
-
-#grillaExe, #grillaExe--fun {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "exp   exp   vid vid" "tabla tabla vid vid";
-  background-color: #858585;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 20px;
-  -ms-grid-columns: 25%;
-      grid-template-columns: 25%;
-  -ms-grid-rows: 150px 370px;
-      grid-template-rows: 150px 370px;
-}
-
-#exp {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: exp;
-}
-
-#tabla {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: tabla;
-}
-
-video {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: vid;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  padding: 1.2rem;
 }
 
 #flexIndex {
@@ -130,12 +87,32 @@ video {
           justify-content: center;
 }
 
-#grillaExe--fun {
-  padding-bottom: 35px;
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  width: 30%;
+  height: auto;
+  opacity: 1;
 }
 
-.container {
-  height: "680px";
+.displayForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fuenteNunito {
@@ -161,6 +138,27 @@ video {
 
 .negrita {
   font-weight: bold;
+}
+
+.videoFun {
+  width: 100%;
+  max-width: 596px;
+  height: 100%;
+  max-height: 480px;
+}
+
+.videoMus {
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  max-height: 420px;
+}
+
+.imgInfo {
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  max-height: 350px;
 }
 
 .colorTitulos {
@@ -200,20 +198,16 @@ video {
 }
 
 .margenes {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.colorM {
-  background-color: #858585;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .padding {
-  padding: 20px;
+  padding: 1rem;
 }
 
 .interlineado {
-  line-height: 40px;
+  line-height: 2.2rem;
 }
 
 .tamañoSection {
@@ -229,7 +223,11 @@ video {
 }
 
 .paddingTabla {
-  padding: 10px;
+  padding: 0.6rem;
+}
+
+.vhBody {
+  height: 100vh;
 }
 
 footer {
@@ -243,26 +241,15 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 1rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
   padding-bottom: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#108a57), to(#002533));
   background-image: linear-gradient(#108a57, #002533);
   color: blanchedalmond;
   font-family: 'Nunito', sans serif;
-}
-
-.btn--insta {
-  color: #bd12ae;
-}
-
-.btn--tiktok {
-  color: black;
-}
-
-.btn--face {
-  color: #122cbd;
+  width: 100vw;
 }
 
 .flexFooter {
@@ -273,12 +260,12 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .btn_social {
-  padding-right: 15px;
+  padding-right: 0.6rem;
+  color: blanchedalmond;
 }
 /*# sourceMappingURL=StyleS.css.map */

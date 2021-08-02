@@ -1,4 +1,3 @@
-$altura : "680px";
 #menu{
     text-decoration: none;
     padding: 0,5rem 3rem 0.5rem 3rem;
@@ -8,48 +7,34 @@ $altura : "680px";
         color: blanchedalmond;
         padding: 0.8rem 5rem 0.8rem 5rem;
         color: black;
-        transition: all 0.5s;}
+        transition: all 0.3s;}
     }
     #divPrincipal {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 20px;
-        background-color: rgb(133, 133, 133);
-    }
-    #grillaExe {
-        display: grid;
-        grid-template-areas:
-        "exp   exp   vid vid"
-        "tabla tabla vid vid";
-        background-color:rgb(133, 133, 133);
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 20px;
-        grid-template-columns:25%;
-        grid-template-rows:150px 370px ;
-    }
-    #exp {
-        grid-area: exp;
-    }
-    #tabla {
-        grid-area: tabla;
-    }
-    video {
-        grid-area: vid;
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+        padding: 1.2rem;
     }
     #flexIndex {
         display: flex;
         justify-content: center;
     }
-    #grillaExe--fun {
-        @extend #grillaExe; 
-        padding-bottom:35px;
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 30%;
+        height: auto;
+        opacity: 1;
+        
     }
-    .container {
-        height: $altura;
+    .displayForm {
+        display: flex;
+        justify-content: center;
     }
     .fuenteNunito {
         font-family: 'Nunito', sans-serif;
@@ -67,7 +52,24 @@ $altura : "680px";
     .negrita {
         font-weight: bold;
     }
-            
+    .videoFun {
+        width: 100%;
+        max-width: 596px;
+        height: 100%;
+        max-height: 480px;
+    }
+    .videoMus{
+        width: 100%;
+        max-width: 420px;
+        height: 100%;
+        max-height: 420px;
+    }
+    .imgInfo {
+        width: 100%;
+        max-width: 350px;
+        height: 100%;
+        max-height: 350px
+    }        
     .colorTitulos {
         color: rgb(0, 80, 47);
     }
@@ -95,17 +97,14 @@ $altura : "680px";
     .colorFuente {
         color: blanchedalmond;
     }
-    .margenes { margin-top:10px;
-        margin-bottom: 10px;   
-    }
-    .colorM{
-        background-color: rgb(133, 133, 133);
+    .margenes { margin-top:0.6rem;
+        margin-bottom: 0.6rem;   
     }
     .padding { 
-        padding: 20px;
+        padding: 1rem;
     }
     .interlineado {
-        line-height: 40px;
+        line-height: 2.2rem;
     }
     .tamañoSection {
         height:80vh ;
@@ -117,5 +116,8 @@ $altura : "680px";
         opacity:0% ;
     }
     .paddingTabla {
-        padding: 10px;
+        padding: 0.6rem;
+    }
+    .vhBody {
+        height: 100vh;
     }
