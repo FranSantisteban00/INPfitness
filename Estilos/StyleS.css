@@ -92,10 +92,22 @@ form {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30%;
   height: auto;
   opacity: 1;
+  padding: 2.5rem;
+  border-style: outset;
+}
+
+img {
+  padding: 1rem;
+}
+
+video {
+  padding: 1rem;
 }
 
 .displayForm {
@@ -220,6 +232,32 @@ form {
 
 .vhBody {
   height: 100vh;
+}
+
+.textCarru {
+  color: black !important;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.textCarru .fondoCarru {
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 10%;
+}
+
+@media (max-width: 767px) {
+  #celCarru {
+    height: 60px;
+    font-size: smaller;
+  }
+  .textCarru {
+    font-size: 0.8rem;
+    border-style: none;
+  }
+  form {
+    border-style: none;
+  }
 }
 
 footer {
