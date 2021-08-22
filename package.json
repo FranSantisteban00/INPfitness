@@ -1,0 +1,20 @@
+{
+  "name": "proyecto_inp_santisteban",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css C:/Users/frans/OneDrive/Documentos/Desarrollo Web 16635/Proyecto_INP_Santisteban/Estilos/StyleS.css --content *.html -o C:/Users/frans/OneDrive/Documentos/Desarrollo Web 16635/Proyecto_INP_Santisteban/estilos_red"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranSantisteban00/ProyectoINP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranSantisteban00/ProyectoINP/issues"
+  },
+  "homepage": "https://github.com/FranSantisteban00/ProyectoINP#readme"
+}
